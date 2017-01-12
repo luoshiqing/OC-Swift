@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ASViewController.h
 //  SUV
 //
 //  Created by sqluo on 2017/1/12.
@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@interface ASViewController : UIViewController
 
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+-(void) sayHello: (NSString*)str;
 
 @end
-

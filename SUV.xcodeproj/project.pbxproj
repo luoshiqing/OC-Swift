@@ -13,6 +13,8 @@
 		D633E2CE1E27154800E06272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D633E2CC1E27154800E06272 /* Main.storyboard */; };
 		D633E2D01E27154800E06272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D633E2CF1E27154800E06272 /* Assets.xcassets */; };
 		D633E2D31E27154800E06272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D633E2D11E27154800E06272 /* LaunchScreen.storyboard */; };
+		D633E2DC1E27155C00E06272 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D633E2DB1E27155C00E06272 /* ASViewController.m */; };
+		D633E2DF1E27156E00E06272 /* BSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633E2DE1E27156E00E06272 /* BSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D633E2CF1E27154800E06272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D633E2D21E27154800E06272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D633E2D41E27154800E06272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D633E2DA1E27155C00E06272 /* ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
+		D633E2DB1E27155C00E06272 /* ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		D633E2DD1E27156E00E06272 /* SUV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SUV-Bridging-Header.h"; sourceTree = "<group>"; };
+		D633E2DE1E27156E00E06272 /* BSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 			children = (
 				D633E2C61E27154800E06272 /* AppDelegate.h */,
 				D633E2C71E27154800E06272 /* AppDelegate.m */,
+				D633E2DA1E27155C00E06272 /* ASViewController.h */,
+				D633E2DB1E27155C00E06272 /* ASViewController.m */,
+				D633E2DE1E27156E00E06272 /* BSViewController.swift */,
 				D633E2C91E27154800E06272 /* ViewController.h */,
 				D633E2CA1E27154800E06272 /* ViewController.m */,
 				D633E2CC1E27154800E06272 /* Main.storyboard */,
@@ -67,6 +76,7 @@
 				D633E2D11E27154800E06272 /* LaunchScreen.storyboard */,
 				D633E2D41E27154800E06272 /* Info.plist */,
 				D633E2C31E27154800E06272 /* Supporting Files */,
+				D633E2DD1E27156E00E06272 /* SUV-Bridging-Header.h */,
 			);
 			path = SUV;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 					D633E2BF1E27154800E06272 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = NP7D9SC777;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D633E2DF1E27156E00E06272 /* BSViewController.swift in Sources */,
+				D633E2DC1E27155C00E06272 /* ASViewController.m in Sources */,
 				D633E2CB1E27154800E06272 /* ViewController.m in Sources */,
 				D633E2C81E27154800E06272 /* AppDelegate.m in Sources */,
 				D633E2C51E27154800E06272 /* main.m in Sources */,
@@ -271,11 +284,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NP7D9SC777;
 				INFOPLIST_FILE = SUV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sql.SUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SUV/SUV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,11 +302,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NP7D9SC777;
 				INFOPLIST_FILE = SUV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sql.SUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SUV/SUV-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
